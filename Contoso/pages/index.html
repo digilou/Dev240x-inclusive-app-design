@@ -9,9 +9,30 @@
 </head>
 
 <body>
+    <a id="skip-to-main" href="#skipDestination">Skip to main</a>
     <div id="container">
         <header>
-            <div id="top-bar"></div>
+            <div id="top-bar">
+                <img src="../images/logo.png" alt="Contoso" class="left" />
+            </div>
+            <nav id="top-nav" role="navigation">
+                <ul role="menubar">
+                    <li role="presentation">
+                        <a role="menuitem" tabindex="0" href="./index.html" aria-current="page">Home</a>
+                    </li>
+                    <li role="presentation" class="menuDropdown">
+                        <a role="menuitem" href="profile.html">Profiles</a>
+                    </li>
+                    <li role="presentation">
+                        <a role="menuitem" href="profileStats.html">Profile Statistics</a>
+                    </li>
+                    <li role="presentation">
+                        <a role="menuitem" href="faq.html">
+                            <abbr title="Frequently Asked Questions">FAQ</abbr>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
         </header>
         <main id="main" role="main">
             <h1 tabindex="-1" id="skipDestination">
@@ -20,31 +41,58 @@
             <div id="cards">
                 <h2>Employee Profiles</h2>
                 <div id="loadProfile1" aria-hidden="false">
-                    
-                <article>
-                    <h3>Richard Nail</h3>
-                    <p>Richard is a front-end developer. As an expert in accessibility and usability,
-                    Richard transitions applications to align with the Web Content Accessibility Guidelines.</p>
-                </article>
-                <article>
-                    <h3>Hollie Justice</h3>
-                    <p>Hollie Justice is an experienced developer and is looking for a development role.
-                    Hollie is an expert in HTML, CSS and JavaScript. She has 8 years of industry
-                    experience.</p>
-                </article>
-                <article>
-                    <h3>Naoto Sakai</h3>
-                    <p>Naoto Aunina is a chef looking to change his career. He has recently graduated with a computer science degree and is looking for an internship in development.</p>
+
+                    <article>
+                        <img src="../images/Headshots/richard.jpg" alt="Richard Nail" />
+                        <h3>Richard Nail</h3>
+                        <a href="profile.html">View employee profile ></a>
+                        <p>Richard is a front-end developer. As an expert in accessibility and usability,
+                            Richard transitions applications to align with the Web Content Accessibility Guidelines.</p>
                     </article>
                     <article>
-                    <h3>Alise Aunina</h3>
-                    <p>Alise Aunina is an IT professional looking to change her career. Her goal is to become a front-end developer. She is currently pursuing a degree in development.</p> 
+                        <img src="../images/Headshots/hollie.jpg" alt="Hollie Justice" />
+                        <h3>Hollie Justice</h3>
+                        <a href="profile.html">View employee profile ></a>
+                        <p>Hollie Justice is an experienced developer and is looking for a development role.
+                            Hollie is an expert in HTML, CSS and JavaScript. She has 8 years of industry
+                            experience.</p>
+                    </article>
+                    <article>
+                        <img src="../images/Headshots/naoto.jpg" alt="Naoto Sakai" />
+                        <h3>Naoto Sakai</h3>
+                        <a href="profile.html">View employee profile ></a>
+                        <p>Naoto Aunina is a chef looking to change his career. He has recently graduated with a
+                            computer science degree and is looking for an internship in development.</p>
+                    </article>
+                    <article>
+                        <img src="../images/Headshots/alise-anna.jpg" alt="Alise Aunina" />
+                        <h3>Alise Aunina</h3>
+                        <a href="profile.html">View employee profile ></a>
+                        <p>Alise Aunina is an IT professional looking to change her career. Her goal is to become a
+                            front-end developer. She is currently pursuing a degree in development.</p>
                     </article>
                 </div>
             </div>
-            
+
             <aside role="complementary" id="socialLinks">
                 <h2>share page</h2>
+                <div class="m-social f-vertical">
+                    <ul>
+                        <li>
+                            <a title="Share on Facebook" href="http://facebook.com">
+                                <img src="../images/facebook.png" alt="Share on Facebook">
+                            </a> </li>
+                        <li>
+                            <a title="Share on Twitter" href="http://twitter.com">
+                                <img src="../images/twitter.png" alt="Share on Twitter">
+                            </a> </li>
+                        <li>
+                            <a title="Share on LinkedIn" href="http://linkedin.com">
+                                <img src="../images/linkedin.png" alt="Share on LinkedIn">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </aside>
         </main>
         <footer id="footer" role="contentinfo"></footer>
